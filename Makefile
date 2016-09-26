@@ -1,4 +1,4 @@
-CC=gcc
+CC=gcc -m32
 CFLAGS=-Wall -O
 LDFLAGS=
 EXEC=tp1_breuzon_opsommer

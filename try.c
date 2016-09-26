@@ -1,8 +1,10 @@
 #include "try.h"
+#include <stdio.h>
 #include <assert.h>
 
 int try(struct ctx_s *pctx, func_t *f, int arg) {
-	pctx -> ctx_magic = CTX_MAGIC;
+	printf("test\n");
+	pctx->ctx_magic = CTX_MAGIC;
 	asm("movl %%esp, %0"
 	    : "=r" (pctx->ctx_esp));
 	asm("movl %%ebp, %0"
