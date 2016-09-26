@@ -15,8 +15,9 @@ static int mul(int depth) {
 		case 1:
 			if(i)
 				return i * mul(depth+1);
-			else
+			else {
 				throw(pctx, ~0);
+			}
 	}
 	return 0;
 }
